@@ -1,4 +1,6 @@
 / kdb+ partitioned database maintenance
+// beginning of q file, assigning paths, copy, delete and pwd commands:
+
 \d .os
 WIN:.z.o in`w32`w64
 pth:{p:$[10h=type x;x;string x];if[WIN;p[where"/"=p]:"\\"];(":"=first p)_ p}
